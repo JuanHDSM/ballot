@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Urna Eletrônica</title>
+</head>
+<body>
+  <div class="ballot">
+    <div class="ballot--screen">
+      <div class="ballot--main--screen">
+        <div class="ballot--main--screen--left">
+          <div class="main--screen--1">
+            <span>SEU VOTO PARA</span>
+          </div>
+          <div class="main--screen--2">
+            <span>VEREADOR</span>
+          </div>
+          <div class="main--screen--3">
+            <div class="number blinks"></div>
+            <div class="number"></div>
+          </div>
+          <div class="main--screen--4">
+            Nome: FULANO DE TAL </br>
+            Partido: QQQ </br>
+            Vice-Prefeito: CICLANO DE BELTRANO
+          </div>
+        </div>
+        <div class="ballot--main--screen--right">
+          <div class="screen--right--image">
+            <img src="./assets/img/84.jpg" alt="Prefeito">
+            Prefeito
+          </div>
+          <div class="screen--right--image small">
+            <img src="./assets/img/84_2.jpg" alt="Prefeito">
+            Vice-Prefeito
+          </div>
+        </div>
+      </div>
+      <div class="ballot--footer--screen">
+        Aperte a tecla:<br/>
+        CONFIRMA para CONFIRMAR este voto<br/>
+        CORRIGE para CORRIGIR este voto
+      </div>
+    </div>
+    <div class="ballot--keyboard">
+      <div class="keyboard--row">
+        <div class="keyboard--btn" onclick="clicked('1')">1</div>
+        <div class="keyboard--btn" onclick="clicked('2')">2</div>
+        <div class="keyboard--btn" onclick="clicked('3')">3</div>
+      </div>
+      <div class="keyboard--row">
+        <div class="keyboard--btn" onclick="clicked('4')">4</div>
+        <div class="keyboard--btn" onclick="clicked('5')">5</div>
+        <div class="keyboard--btn" onclick="clicked('6')">6</div>
+      </div>
+      <div class="keyboard--row">
+        <div class="keyboard--btn" onclick="clicked('7')">7</div>
+        <div class="keyboard--btn" onclick="clicked('8')">8</div>
+        <div class="keyboard--btn" onclick="clicked('9')">9</div>
+      </div>
+      <div class="keyboard--row">
+        <div class="keyboard--btn" onclick="clicked('0')">0</div>
+      </div>
+      <div class="keyboard--row">
+        <div class="keyboard--btn btn--white" onclick="white('branco')">BRANCO</div>
+        <div class="keyboard--btn btn--fixes" onclick="fixes('corrige')">CORRIGE</div>
+        <div class="keyboard--btn btn--confirm" onclick="confirm('confirmar')">CONFIRMA</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/steps.js" defer></script>
+  <script src="./assets/script.js" defer></script>
+</body>
+</html>
